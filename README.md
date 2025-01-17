@@ -9,14 +9,30 @@ Document your approach so your colleagues can understand and reproduce what you 
 Reference:
 [ENSEMBL v101]([https://www.ensembl.org/info/website/archives/assembly.html](http://aug2020.archive.ensembl.org/index.html))
 
-__Workflow:__ pipeline.sh
+## Workflow: 
+code: pipeline.sh
 
 __Steps:__
 _StringTie_ - Used to make assembly guided by the _Mus_musculus.GRCm38.101.chr.gtf_ file downloaded from the above ENSEMBL v101 link. <br/>
-
+ <br/>
 -T argument was used to set the TPM cut off <br/>
 --rf argument was used to adjust the library type <br/>
 -C argument returned a coverage table with the fully covered chr19 genes <br/>
 -G argument set the reference guide
+-A turns on the returning of abundance table with gene symbols and TPM normalization
+ <br/>
+StringTie returns a gtf file called assembly.gtf, that is the chr19 assembly guided by the ENSEMBL v101 gtf. <br/>
+ <br/>
+_bedtools_ - Converting gtf files to fasta. <br/>
+Using a reference fasta file bedtools getfasta command allows to convert gtf file to fasta. <br/>
+ <br/>
+_Translate to amino acid sequence_ - python_env/conversion.py  <br/>
+conversion.py contains a biopython script converting fasta DNA sequence to fasta amino acid sequence.  <br/>
+ <br/>
+__Additional script:__  <br/>
+python_env/visualization.py makes a ranked barplot using the abundance file computed by StringTie. 
+
+
+
 
 
