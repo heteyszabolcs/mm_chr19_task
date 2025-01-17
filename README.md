@@ -9,8 +9,8 @@ Reference:
 <br/>
 <br/>
 To reproduce the code: <br/>
-1.) place the bam file into the bam folder <br/>
-2.) The GRCm38 v101 gtf file (_ftp://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/_) and the chr19 fasta (dna folder of _ftp://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/_) should be placed in the reference folder. Then run the pipeline.sh in a Linux environment where bowtie, stringtie and bedtools are available in the path. 
+1.) Place the bam file into the bam folder <br/>
+2.) The GRCm38 (v101) gtf file (see _ftp://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/_) and the chr19 fasta (located in the dna folder of _ftp://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/_) should be placed in the reference folder. Then run the pipeline.sh in a Linux environment where bowtie, stringtie and bedtools are available in the path. 
 <br/>
 <br/>
 ## Workflow: 
