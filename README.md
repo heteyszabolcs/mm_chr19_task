@@ -23,7 +23,7 @@ _StringTie_ - This tool was used to make assembly guided by the _Mus_musculus.GR
 --rf argument was used to adjust the library type <br/>
 -C argument returned a coverage table with the fully covered chr19 genes <br/>
 -G argument set the reference guide <br/>
--A turns on the returning of abundance table with gene symbols and TPM normalization
+-A turns on the returning of abundance table with gene symbols and TPM normalization <br/>
  <br/>
 StringTie returns a gtf file called assembly.gtf, that is the chr19 assembly guided by the ENSEMBL v101 gtf. <br/>
  <br/>
