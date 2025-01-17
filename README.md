@@ -6,7 +6,12 @@ Document your approach so your colleagues can understand and reproduce what you 
 
 Reference:
 [ENSEMBL v101](http://aug2020.archive.ensembl.org/index.html)
-
+<br/>
+To reproduce the code: <br/>
+1.) place the bam file into the bam folder <br/>
+2.) The [GRCm38 v101 gtf file](ftp://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/) and [chr19 fasta](ftp://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/) (dna folder) should be placed in the reference folder. Then run the pipeline.sh in a Linux environment where bowtie, stringtie and bedtools are available in the path. 
+<br/>
+<br/>
 ## Workflow: 
 main bash script: pipeline.sh
 
@@ -25,7 +30,8 @@ _bedtools_ - Converting gtf files to fasta. <br/>
 Using a reference fasta file bedtools getfasta command allows to convert gtf file to fasta. <br/>
  <br/>
 _Translate to amino acid sequence_ - python_env/conversion.py  <br/>
-conversion.py contains a biopython script converting fasta DNA sequence to fasta amino acid sequence. The output fasta file is output/assembly_aa.fa <br/>
+conversion.py contains a biopython script converting fasta DNA sequence to fasta amino acid sequence. <br/>
+The output fasta file is output/assembly_aa.fa <br/>
  <br/>
 __Additional script:__  <br/>
 python_env/visualization.py makes a ranked barplot in terms of TPM values using the abundance file computed by StringTie -A argument. 
