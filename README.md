@@ -7,7 +7,7 @@ is a BAM file containing a small amount of data from a mouse RNAseq experiment. 
 Document your approach so your colleagues can understand and reproduce what you have done. <br/>
 
 Reference:
-[ENSEMBL v101]([https://www.ensembl.org/info/website/archives/assembly.html](http://aug2020.archive.ensembl.org/index.html))
+[ENSEMBL v101]([https://www.ensembl.org/info/website/archives/assembly.html](http://aug2020.archive.ensembl.org/index.html)
 
 ## Workflow: 
 main bash script: pipeline.sh
