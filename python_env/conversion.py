@@ -14,7 +14,7 @@ def dna_to_protein_fasta(input_fasta, output_fasta):
 
     # Parse the input fasta file
     for record in SeqIO.parse(input_fasta, "fasta"):
-        # Translate the DNA sequence to a aminoacid sequence
+        # Translate the DNA sequence to aminoacid sequence
         # to_stop argument: if True translation is terminated at the first in frame stop codon
         protein_seq = record.seq.translate(to_stop=True)
 
