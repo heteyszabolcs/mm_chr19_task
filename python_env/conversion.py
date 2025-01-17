@@ -4,17 +4,18 @@ from Bio.SeqRecord import SeqRecord
 
 def dna_to_protein_fasta(input_fasta, output_fasta):
     """
-    Convert DNA FASTA file to Protein FASTA by translating sequences.
+    Converting DNA fasta to Protein fasta by translating sequences.
 
     Args:
-        input_fasta (str): Path to the input DNA FASTA file.
-        output_fasta (str): Path to the output Protein FASTA file.
+        input_fasta (str): Path to the input DNA fasta coming from the bedtools.
+        output_fasta (str): Path to the output Protein fasta file.
     """
     protein_records = []
 
-    # Parse the input FASTA file
+    # Parse the input fasta file
     for record in SeqIO.parse(input_fasta, "fasta"):
-        # Translate the DNA sequence to a protein sequence
+        # Translate the DNA sequence to a aminoacid sequence
+        # to_stop argument: if True translation is terminated at the first in frame stop codon
         protein_seq = record.seq.translate(to_stop=True)
 
         # Create a new SeqRecord for the protein sequence
