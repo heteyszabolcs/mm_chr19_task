@@ -1,0 +1,36 @@
+from Bio import SeqIO
+from Bio.Seq import Seq
+from Bio.SeqRecord import SeqRecord
+
+def dna_to_protein_fasta(input_fasta, output_fasta):
+    """
+    Convert DNA FASTA file to Protein FASTA by translating sequences.
+
+    Args:
+        input_fasta (str): Path to the input DNA FASTA file.
+        output_fasta (str): Path to the output Protein FASTA file.
+    """
+    protein_records = []
+
+    # Parse the input FASTA file
+    for record in SeqIO.parse(input_fasta, "fasta"):
+        # Translate the DNA sequence to a protein sequence
+        protein_seq = record.seq.translate(to_stop=True)
+
+        # Create a new SeqRecord for the protein sequence
+        protein_record = SeqRecord(
+            protein_seq,
+            id=record.id,
+            description="Translated from DNA"
+        )
+
+        protein_records.append(protein_record)
+
+    # Write the protein sequences to the output FASTA file
+    SeqIO.write(protein_records, output_fasta, "fasta")
+    print(f"Protein FASTA file saved to {output_fasta}")
+
+# run
+input_fasta = "../output/chr19_assembly.fa"  # Replace with your input DNA FASTA file path
+output_fasta = "../output/chr19_assembly_aa.fa"  # Replace with desired output file path
+dna_to_protein_fasta(input_fasta, output_fasta)
