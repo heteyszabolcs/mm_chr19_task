@@ -13,8 +13,6 @@ To reproduce the code: <br/>
 2.) The GRCm38 (v101) gtf file (see _ftp://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/_) and the chr19 fasta (located in the dna folder of _ftp://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/_) should be placed in the reference folder. Then run the pipeline.sh in a Linux environment where bowtie, stringtie and bedtools are available in the path. <br/>
 3.) The Python script converting DNA fasta to amino acid fasta was run under Python 3.10 with the Biopython package. <br/>
 <br/>
-<br/>
-<br/>
 ## Workflow: 
 main bash script: pipeline.sh
 
