@@ -27,7 +27,7 @@ _StringTie_ - This tool was used to make assembly guided by the _Mus_musculus.GR
  <br/>
 StringTie returns a gtf file called assembly.gtf, that is the chr19 assembly guided by the ENSEMBL v101 gtf. <br/>
  <br/>
-_bedtools_ - Converting gtf files to fasta. <br/>
+_bedtools_ - Converting gtf file to fasta. <br/>
 Using a reference fasta file bedtools getfasta command allows to convert gtf file to fasta. <br/>
  <br/>
 _Translate to amino acid sequence_ - python_env/conversion.py  <br/>
