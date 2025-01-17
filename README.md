@@ -1,4 +1,4 @@
-## mm_chr19_task
+## Assembly of mouse chr19 RNA-Seq data
 
 Task details:  from RNAseq data in BAM format generate a protein sequences database in FASTA format. <br/>
 Here https://www.dropbox.com/scl/fi/c8str65tm3nnpvtd1h5o4/mouse_chr19.bam?rlkey=9730i5t2d2xl99ve5w4ty5rfi&st=ode2vbiu&dl=0
@@ -30,7 +30,7 @@ _Translate to amino acid sequence_ - python_env/conversion.py  <br/>
 conversion.py contains a biopython script converting fasta DNA sequence to fasta amino acid sequence.  <br/>
  <br/>
 __Additional script:__  <br/>
-python_env/visualization.py makes a ranked barplot using the abundance file computed by StringTie. 
+python_env/visualization.py makes a ranked barplot in terms of TPM values using the abundance file computed by StringTie -A argument. 
 
 
 
