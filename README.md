@@ -11,7 +11,7 @@ Reference:
 main bash script: pipeline.sh
 
 __Steps:__  <br/>
-_StringTie_ - Used to make assembly guided by the _Mus_musculus.GRCm38.101.chr.gtf_ file downloaded from the above ENSEMBL v101 link. <br/>
+_StringTie_ - This tool was used to make assembly guided by the _Mus_musculus.GRCm38.101.chr.gtf_ file downloaded from the above ENSEMBL v101 link. <br/>
  <br/>
 -T argument was used to set the TPM cut off <br/>
 --rf argument was used to adjust the library type <br/>
@@ -30,7 +30,9 @@ conversion.py contains a biopython script converting fasta DNA sequence to fasta
 __Additional script:__  <br/>
 python_env/visualization.py makes a ranked barplot in terms of TPM values using the abundance file computed by StringTie -A argument. 
 
-
+__Environment:__ <br/>
+The pipeline.sh was run on PDC Dardel. <br/>
+Python v3.10 was used for the Biopython and visualization scripts. <br/>
 
 
 
