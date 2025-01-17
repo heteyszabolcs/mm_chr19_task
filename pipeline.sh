@@ -28,6 +28,7 @@ stringtie -o ${OUTPUT_DIR}/assembly.gtf --rf \
 # bedtools
 echo "converting to fasta"
 bedtools getfasta -fi ${REFERENCE_FASTA} \
+	-name+ \
 	-bed ${OUTPUT_DIR}/assembly.gtf > ${OUTPUT_DIR}/assembly.fa
 	
 echo "DONE!"

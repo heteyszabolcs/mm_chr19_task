@@ -31,6 +31,6 @@ def dna_to_protein_fasta(input_fasta, output_fasta):
     print(f"Protein FASTA file saved to {output_fasta}")
 
 # run
-input_fasta = "../output/chr19_assembly.fa"  # Replace with your input DNA FASTA file path
-output_fasta = "../output/chr19_assembly_aa.fa"  # Replace with desired output file path
+input_fasta = "../output/assembly.fa"  # Replace with your input DNA FASTA file path
+output_fasta = "../output/assembly_aa.fa"  # Replace with desired output file path
 dna_to_protein_fasta(input_fasta, output_fasta)
