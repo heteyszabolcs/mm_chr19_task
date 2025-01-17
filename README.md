@@ -9,9 +9,9 @@ Document your approach so your colleagues can understand and reproduce what you 
 Reference:
 [ENSEMBL v101]([https://www.ensembl.org/info/website/archives/assembly.html](http://aug2020.archive.ensembl.org/index.html))
 
-# Workflow: pipeline.sh
+__Workflow:__ pipeline.sh
 
-# Steps:
+__Steps:__
 _StringTie_ - Used to make assembly guided by the _Mus_musculus.GRCm38.101.chr.gtf_ file downloaded from the above ENSEMBL v101 link. <br/>
 
 -T argument was used to set the TPM cut off <br/>
