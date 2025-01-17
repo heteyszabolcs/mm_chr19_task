@@ -3,13 +3,14 @@
 Task details:  from RNAseq data in BAM format generate a protein sequences database in FASTA format. <br/>
 Here ([Dropbox](https://www.dropbox.com/scl/fi/c8str65tm3nnpvtd1h5o4/mouse_chr19.bam?rlkey=9730i5t2d2xl99ve5w4ty5rfi&st=ode2vbiu&dl=0)) is a BAM file containing a small amount of data from a mouse RNAseq experiment. The reads have been filtered to only be from chromosome 19, which is conveniently small. Note that the strandedness of the paired reads is RF. We would like you to assemble the reads from this BAM file into transcripts, guided by the ENSEMBL v101 reference. The final output should be a FASTA file with 3-frame translations of transcripts with TPM>1. <br/>
 Document your approach so your colleagues can understand and reproduce what you have done. <br/>
-
+<br/>
 Reference:
 [ENSEMBL v101](http://aug2020.archive.ensembl.org/index.html)
 <br/>
+<br/>
 To reproduce the code: <br/>
 1.) place the bam file into the bam folder <br/>
-2.) The [GRCm38 v101 gtf file](ftp://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/) and [chr19 fasta](ftp://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/) (dna folder) should be placed in the reference folder. Then run the pipeline.sh in a Linux environment where bowtie, stringtie and bedtools are available in the path. 
+2.) The GRCm38 v101 gtf file (_ftp://ftp.ensembl.org/pub/release-101/gtf/mus_musculus/_) and the chr19 fasta (dna folder of _ftp://ftp.ensembl.org/pub/release-101/fasta/mus_musculus/_) should be placed in the reference folder. Then run the pipeline.sh in a Linux environment where bowtie, stringtie and bedtools are available in the path. 
 <br/>
 <br/>
 ## Workflow: 
