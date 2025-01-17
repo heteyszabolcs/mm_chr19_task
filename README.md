@@ -25,7 +25,7 @@ _bedtools_ - Converting gtf files to fasta. <br/>
 Using a reference fasta file bedtools getfasta command allows to convert gtf file to fasta. <br/>
  <br/>
 _Translate to amino acid sequence_ - python_env/conversion.py  <br/>
-conversion.py contains a biopython script converting fasta DNA sequence to fasta amino acid sequence.  <br/>
+conversion.py contains a biopython script converting fasta DNA sequence to fasta amino acid sequence. The output fasta file is output/assembly_aa.fa <br/>
  <br/>
 __Additional script:__  <br/>
 python_env/visualization.py makes a ranked barplot in terms of TPM values using the abundance file computed by StringTie -A argument. 
